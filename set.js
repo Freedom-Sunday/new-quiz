@@ -42,6 +42,7 @@ login.addEventListener('click', (e)=>{
         alert('Access Granted !!!')
         form.style.boxShadow = '0 0 4px green';
         username.style.border = 'solid 1px green';
+        q1.style.fontStyle = 'italic';
 
         setTimeout(() => {
             form.style.display = 'none';
