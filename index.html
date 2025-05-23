@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set's Quiz</title>
+    <link rel="stylesheet" href=".//style.css">
+</head>
+<body>
+
+    <main>
+
+        <form action="" id="form">
+            <input type="text" placeholder="Name" autocomplete="off" id="username">
+            <select name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+
+            <button id="login">Start Quiz</button>
+        </form>
+
+        <div id="q1">
+            <p>1. What is the S.I unit of power?</p>
+
+            <input type="text" disabled id="q1ans">
+
+            <li onclick="q1a()">Joules</li>
+            <li onclick="q1b()">Watts</li>
+            <li onclick="q1c()">Amps</li>
+
+            <button onclick="nxt1()">Next</button>
+        </div>
+
+        <div id="q2">
+            <p>2. What is the capital of Hawaii?</p>
+
+            <input type="text" disabled id="q2ans">
+
+            <li>Ohio</li>
+            <li>Honolulu</li>
+            <li>Texas</li>
+
+            <button onclick="prev2()">Previous</button>
+            <button onclick="nxt2()">Next</button>
+        </div>
+
+        <div id="q3">
+            <p>3. What is the final stage of a caterpillar?</p>
+
+            <input type="text" disabled id="q3ans">
+
+            <li>Centipede</li>
+            <li>Butterfly</li>
+            <li>Moth</li>
+
+            <button onclick="prev3()">Previous</button>
+            <button onclick="nxt3()">Next</button>
+        </div>
+
+        <div id="q4">
+            <p>4. Which of these is one of the Seven wonders of the world?</p>
+
+            <input type="text" disabled id="q4ans">
+
+            <li>Zuma Rock</li>
+            <li>Pyramid of Giza</li>
+            <li>Burj Khalifa</li>
+
+            <button onclick="prev4()">Previous</button>
+            <button onclick="nxt4()">Next</button>
+        </div>
+
+        <div id="q5">
+            <p>5. Which of these is NOT a prime number?</p>
+
+            <input type="text" disabled id="q5ans">
+
+            <li>6</li>
+            <li>17</li>
+            <li>7</li>
+
+            <button onclick="prev5()">Previous</button>
+            <button onclick="nxt5()">Next</button>
+        </div>
+
+        <div id="q6">
+            <p>6. Which of these is not a primary color?</p>
+
+            <input type="text" disabled id="q6ans">
+
+            <li>Green</li>
+            <li>Red</li>
+            <li>Blue</li>
+
+            <button onclick="prev6()">Previous</button>
+            <button onclick="nxt6()">Next</button>
+        </div>
+
+        <div id="q7">
+            <p>7. Where does the sun set?</p>
+
+            <input type="text" disabled id="q7ans">
+
+            <li>South</li>
+            <li>West</li>
+            <li>East</li>
+
+            <button onclick="prev7()">Previous</button>
+            <button onclick="nxt7()">Next</button>
+        </div>
+
+        <div id="q8">
+            <p>8. A man is Thrice the age of his son. If his son is currently 15 years old, how old will the man be when the son turns 18?</p>
+
+            <input type="text" disabled id="q8ans">
+
+            <li>45</li>
+            <li>54</li>
+            <li>57</li>
+
+            <button onclick="prev8()">Previous</button>
+            <button onclick="nxt8()">Next</button>
+        </div>
+
+
+        <div id="q9">
+            <p>9. How many states make up the United States of America?</p>
+
+            <input type="text" disabled id="q9ans">
+
+            <li>50</li>
+            <li>38</li>
+            <li>49</li>
+
+            <button onclick="prev9()">Previous</button>
+            <button onclick="nxt9()">Next</button>
+        </div>
+
+        <div id="q10">
+            <p>10. Where is the deepest part of the ocean located?</p>
+
+            <input type="text" disabled id="q10ans">
+
+            <li>Bermuda Triangle</li>
+            <li>Mariana Trench</li>
+            <li>Mississsippi</li>
+
+            <button onclick="prev10()">Previous</button>
+            <button class="submit" onclick="submit()">Submit</button>
+        </div>
+
+    </main>
+
+    <script src="./set.js"></script>
+</body>
+</html>
