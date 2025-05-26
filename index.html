@@ -37,9 +37,9 @@
 
             <input type="text" disabled id="q2ans">
 
-            <li>Ohio</li>
-            <li>Honolulu</li>
-            <li>Texas</li>
+            <li onclick="q2a()">Ohio</li>
+            <li onclick="q2b()">Honolulu</li>
+            <li onclick="q2c()">Texas</li>
 
             <button onclick="prev2()">Previous</button>
             <button onclick="nxt2()">Next</button>
@@ -50,9 +50,9 @@
 
             <input type="text" disabled id="q3ans">
 
-            <li>Centipede</li>
-            <li>Butterfly</li>
-            <li>Moth</li>
+            <li onclick="q3a()">Centipede</li>
+            <li onclick="q3b()">Butterfly</li>
+            <li onclick="q3c()">Moth</li>
 
             <button onclick="prev3()">Previous</button>
             <button onclick="nxt3()">Next</button>
@@ -63,9 +63,9 @@
 
             <input type="text" disabled id="q4ans">
 
-            <li>Zuma Rock</li>
-            <li>Pyramid of Giza</li>
-            <li>Burj Khalifa</li>
+            <li onclick="q4a()">Zuma Rock</li>
+            <li onclick="q4b()">Pyramid of Giza</li>
+            <li onclick="q4c()">Burj Khalifa</li>
 
             <button onclick="prev4()">Previous</button>
             <button onclick="nxt4()">Next</button>
@@ -76,9 +76,9 @@
 
             <input type="text" disabled id="q5ans">
 
-            <li>6</li>
-            <li>17</li>
-            <li>7</li>
+            <li onclick="q5a()">6</li>
+            <li onclick="q5b()">17</li>
+            <li onclick="q5c()">7</li>
 
             <button onclick="prev5()">Previous</button>
             <button onclick="nxt5()">Next</button>
@@ -89,9 +89,9 @@
 
             <input type="text" disabled id="q6ans">
 
-            <li>Green</li>
-            <li>Red</li>
-            <li>Blue</li>
+            <li onclick="q6a()">Green</li>
+            <li onclick="q6b()">Red</li>
+            <li onclick="q6c()">Blue</li>
 
             <button onclick="prev6()">Previous</button>
             <button onclick="nxt6()">Next</button>
@@ -102,9 +102,9 @@
 
             <input type="text" disabled id="q7ans">
 
-            <li>South</li>
-            <li>West</li>
-            <li>East</li>
+            <li onclick="q7a()">South</li>
+            <li onclick="q7b()">West</li>
+            <li onclick="q7c()">East</li>
 
             <button onclick="prev7()">Previous</button>
             <button onclick="nxt7()">Next</button>
@@ -115,9 +115,9 @@
 
             <input type="text" disabled id="q8ans">
 
-            <li>45</li>
-            <li>54</li>
-            <li>57</li>
+            <li onclick="q8a()">45</li>
+            <li onclick="q8b()">54</li>
+            <li onclick="q8c()">57</li>
 
             <button onclick="prev8()">Previous</button>
             <button onclick="nxt8()">Next</button>
@@ -129,9 +129,9 @@
 
             <input type="text" disabled id="q9ans">
 
-            <li>50</li>
-            <li>38</li>
-            <li>49</li>
+            <li onclick="q9a()">50</li>
+            <li onclick="q9b()">38</li>
+            <li onclick="q9c()">49</li>
 
             <button onclick="prev9()">Previous</button>
             <button onclick="nxt9()">Next</button>
@@ -142,14 +142,15 @@
 
             <input type="text" disabled id="q10ans">
 
-            <li>Bermuda Triangle</li>
-            <li>Mariana Trench</li>
-            <li>Mississsippi</li>
+            <li onclick="q10a()">Bermuda Triangle</li>
+            <li onclick="q10b()">Mariana Trench</li>
+            <li onclick="q10c()">Mississippi</li>
 
             <button onclick="prev10()">Previous</button>
-            <button class="submit" onclick="submit()">Submit</button>
+            <button id="submit" onclick="submit()">Submit</button>
         </div>
 
+        <h2 id="result"></h2>
     </main>
 
     <script src="./set.js"></script>

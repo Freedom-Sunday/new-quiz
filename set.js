@@ -14,6 +14,8 @@ let q7 = document.getElementById('q7');
 let q8 = document.getElementById('q8');
 let q9 = document.getElementById('q9');
 let q10 = document.getElementById('q10');
+let submit = document.getElementById('submit');
+let result = document.getElementById('result');
 
 // Question inputs
 let q1ans = document.getElementById('q1ans');
@@ -26,6 +28,8 @@ let q7ans = document.getElementById('q7ans');
 let q8ans = document.getElementById('q8ans');
 let q9ans = document.getElementById('q9ans');
 let q10ans = document.getElementById('q10ans');
+
+result.style.display = "none";
 
 login.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -161,3 +165,127 @@ function q1b() {
 function q1c() {
     q1ans.value = 'Amps';
 }
+function q2a() {
+    q2ans.value = 'Ohio';
+}
+function q2b() {
+    q2ans.value = 'Honolulu';
+}
+function q2c() {
+    q2ans.value = 'Texas';
+}
+function q3a() {
+    q3ans.value = 'Centipede';
+}
+function q3b() {
+    q3ans.value = 'Butterfly';
+}
+function q3c() {
+    q3ans.value = 'Moth';
+}
+function q4a() {
+    q4ans.value = 'Zuma Rock';
+}
+function q4b() {
+    q4ans.value = 'Pyramid of Giza';
+}
+function q4c() {
+    q4ans.value = 'Burj Khalifa';
+}
+function q5a() {
+    q5ans.value = '6';
+}
+function q5b() {
+    q5ans.value = '17';
+}
+function q5c() {
+    q5ans.value = '7';
+}
+function q6a() {
+    q6ans.value = 'Green';
+}
+function q6b() {
+    q6ans.value = 'Red';
+}
+function q6c() {
+    q6ans.value = 'Blue';
+}
+function q7a() {
+    q7ans.value = 'South';
+}
+function q7b() {
+    q7ans.value = 'West';
+}
+function q7c() {
+    q7ans.value = 'East';
+}
+function q8a() {
+    q8ans.value = '45';
+}
+function q8b() {
+    q8ans.value = '54';
+}
+function q8c
+() {
+    q8ans.value = '57';
+}
+function q9a() {
+    q9ans.value = '50';
+}
+function q9b() {
+    q9ans.value = '38';
+}
+function q9c() {
+    q9ans.value = '49';
+}
+function q10a() {
+    q10ans.value = 'Bermuda Triangle';
+}
+function q10b() {
+    q10ans.value = 'Mariana Trench';
+}
+function q10c() {
+    q10ans.value = 'Mississipi';
+}
+
+let score = 0;
+submit.addEventListener("click", ()=>{
+
+    if (q1ans.value === "Watts") {
+        score++;
+        console.log(score);   
+    }
+    if (q2ans.value === "Honolulu") {
+        score++;
+    }
+    if (q3ans.value === "Butterfly") {
+        score++;
+    }
+    if (q4ans.value === "Pyramid of Giza") {
+        score++;
+    }
+    if (q5ans.value === "6") {
+        score++;
+    }
+    if (q6ans.value === "Blue") {
+        score++;
+    }
+    if (q7ans.value === "West") {
+        score++;
+    }
+    if (q8ans.value === "54") {
+        score++;
+    }
+    if (q9ans.value === "50") {
+        score++;
+    }
+    if (q10ans.value === "Bermuda Triangle") {
+        score++;
+    }
+
+    q10.style.display = "none";
+    result.style.display = "block";
+    result.style.fontStyle = "italic";
+    result.style.color = "green";
+    result.innerText = `Congratulations ${username.value},  you scored ${score}/10.`
+})
