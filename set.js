@@ -287,5 +287,5 @@ submit.addEventListener("click", ()=>{
     result.style.display = "block";
     result.style.fontStyle = "italic";
     result.style.color = "green";
-    result.innerText = `Congratulations ${username.value},  you scored ${score}/10.`
+    result.innerHTML = `<small>Congratulations ${username.value},  you scored ${score}/10.</small>`;
 })
